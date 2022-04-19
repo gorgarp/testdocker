@@ -1,4 +1,5 @@
 FROM boinc/client:latest
+User root
 EXPOSE 80 443 31416 31417
 WORKDIR /var/lib/boinc
 ENTRYPOINT ["/usr/bin/boinc", "--attach_project"]

@@ -1,4 +1,4 @@
-FROM boinc/client:alpine-base
+FROM boinc/client:base-alpine
 EXPOSE 80 443 31416
 WORKDIR /var/lib/boinc
 ENTRYPOINT ["/usr/bin/boinc", "--attach_project"]
